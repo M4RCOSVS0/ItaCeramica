@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>produto01</title>
+    <title>ItaCerâmica | Tudo para sua construção</title>
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <h1>ItaCerâmica</h1>
         <hr>
         <nav>
             <ul class="menu">
-                <a href="../index.html">
-                    <li>Início</li>
-                </a>
-                <a href="../index.html#produtos">
-                    <li>Produtos</li>
-                </a>
-                <a href="../formulario.html">
-                    <li>Fale conosco</li>
-                </a>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="formulario.html">Fale conosco</a></li>
+                <li><a href="#footer">Sobre</a></li>
             </ul>
             <hr>
         </nav>
-        <section>
-            <h2>produto 01</h2>
-            <hr>
-            <img src="../img/generica.png" alt="pg genêrica" title="produto 01" width="500px">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore blanditiis excepturi dolor qui. Excepturi distinctio ipsa, odio totam, nemo sequi qui maxime recusandae atque similique quidem minus veritatis iusto libero!</p>
-            <input type="button" value="Comprar agora" >
-            <input type="button" value="Adcionar ao carrinho">
-        </section>
-        <footer>
-            <br><br><br><br><br><br><br>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vero iure cumque exercitationem quam aliquam minima eius repudiandae soluta eaque porro tempora ab molestiae nam repellat obcaecati facilis debitis vel.</p>
-        </footer>
     </header>
+
+    <main>
+        <section>
+            <h2 class="produto-title">Produto 011</h2>
+            <hr>
+            <article class="produto">
+                <img class="produto-pag" src="../img/generica.png" alt="Foto genérica do produto" width="500px"
+                    title="Imagem genérica">
+                <h3 class="produto-descricao">Descrição do produto</h3>
+                <p class="produto-preço">preço do produto vai aqui.</p>
+                <input type="number" name="quantidade" class="quantidade" min="1" max="500000" placeholder="Quantidade" aria-label="Adicionar Quantidade" id="inQuantidade">
+                <button class="carrinho" aria-label="Adicionar ao carrinho" id="btCarrinho">Adicionar ao carrinho</button>
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <br><br><br><br><br><br>
+        <hr>
+        <p>
+            Feito por Marcos Vinícius Santana , visite meu
+            <a href="https://github.com/M4RCOSVS0" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+    </footer>
 </body>
+
 </html>
