@@ -16,36 +16,35 @@
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="formulario.html">Fale conosco</a></li>
                 <li><a href="#footer">Sobre</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section>
-            <h2>Formulário de Contato</h2>
+            <h2>Inchada</h2>
             <hr>
-            <form action="mailto:marcossvin.so@gmail.com" method="post" enctype="text/plain">
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" placeholder="Informe seu nome:"><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Informe seu melhor e-mail:"><br><br>
-                <label for="descricao">Descrição:</label><br>
-                <textarea id="descricao" name="descricao" rows="6" cols="50"
-                    placeholder="Digite uma breve descrição:"></textarea><br><br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Refazer">
-            </form>
+            <article>
+                <img src="img/inchada - G.webp" alt="Inchada" title="Inchada">
+                <h3>Inchada Desenvolvida para contrução civíl.</h3>
+                <p>R$ 100,00 unidade.</p>
+                <input type="number" name="quantidade" min="1" max="500000" placeholder="Quantidade"
+                    aria-label="Adicionar Quantidade" id="inQuantidade">
+                <button aria-label="Adicionar ao carrinho" id="btCarrinho">Adicionar ao
+                    carrinho</button>
+            </article>
         </section>
     </main>
 
     <footer id="footer">
         <hr>
         <p>
-            Feito por Marcos Vinícius Santana, visite meu
+            Feito por Marcos Vinícius Santana , visite meu
             <a href="https://github.com/M4RCOSVS0" target="_blank" rel="noopener noreferrer">GitHub</a>
         </p>
     </footer>
-
 </body>
 
 </html>
