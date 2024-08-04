@@ -13,18 +13,29 @@
     <div class="layout">
 
         <header>
-            <h1>ItaCerâmica</h1>
-            <hr>
             <nav>
-                <ul>
+                <div class="logo">
+                    Logo
+                </div>
+
+                <ul class="menu">
                     <li><a href="index.html">Início</a></li>
-                    <li><a href="#produtos">Produtos</a>
+                    <!--<li class="dropdown"><a href="#produtos">Produtos</a>
                         <ul>
                             <li><a href="#ferramentas">Ferramentas</a></li>
                             <li><a href="#materiais">Materiais</a></li>
                             <li><a href="#pisos">Pisos</a></li>
                             <li><a href="#tintas">Tintas</a></li>
                         </ul>
+                    </li>-->
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">produtos</a>
+                        <div class="dropdown-content">
+                            <a href="#ferramentas">Ferramentas</a>
+                            <a href="#materiais">Materiais</a>
+                            <a href="#pisos">pisos</a>
+                            <a href="#tintas">Tintas</a>
+                        </div>
                     </li>
                     <li><a href="formulario.html">Fale conosco</a></li>
                     <li><a href="#footer">sobre</a></li>
@@ -33,132 +44,151 @@
             </nav>
         </header>
         <main class="produtos">
-            <h2>Ferramentas</h2>
-            <hr>
+
             <section id="ferramentas">
+                
+                <h2>Ferramentas</h2>
+        
+                <div class="produtos-container">
 
-                <article>
-                    <a href="furadeira-bosh.html">
-                        <img src="img/furadeira_bosch - G.webp" width="180px" alt="furadeira bosch"
-                            title="furadeira bosch">
-                        <p>Furadeira Bosh</p>
-                        <p>R$ 400,00</p>
-                    </a>
-                </article>
+                    <article>
+                        <a href="furadeira-bosh.html">
+                            <figure>
+                                <img src="img/furadeira_bosch - G.webp" width="180px" alt="furadeira bosch"
+                                title="furadeira bosch">
+                                <figcaption>Furadeira Bosh</figcaption>
+                            </figure>
+                            <data value="400.00" class="preco">R$ 400,00</data>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="inchada-cabo-madeira.html">
-                        <img src="img/inchada - G.webp" width="180px" alt="inchada-cabo-madeira"
-                            title="inchada-cabo-madeira">
-                        <p>Inchada</p>
-                        <p>R$ 100,00</p>
-                    </a>
-                </article>
+                    <article>
+                        <a href="inchada-cabo-madeira.html">
+                            <img src="img/inchada - G.webp" width="180px" alt="inchada-cabo-madeira"
+                                title="inchada-cabo-madeira">
+                            <p>Inchada</p>
+                            <p>R$ 100,00</p>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="Martelo-normal.html">
-                        <img src="img/martelo - G.webp" width="180px" alt="Martelo" title="Martelo">
-                        <p>Martelo</p>
-                        <p>R$ 89,90</p>
-                    </a>
-                </article>
+                    <article>
+                        <a href="Martelo-normal.html">
+                            <img src="img/martelo - G.webp" width="180px" alt="Martelo" title="Martelo">
+                            <p>Martelo</p>
+                            <p>R$ 89,90</p>
+                        </a>
+                    </article>
+
+                </div>
 
             </section>
-            <h2>Materiais</h2>
-            <hr>
+
             <section id="materiais">
+                
+                <h2>Materiais</h2>
+                
+                <div class="produtos-container">
 
+                    <article>
+                        <a href="bloco-tijolo-vedacao-14-cm.html">
+                            <img src="img/bloco-tijolo-vedacao-14-cm - G.webp" width="180px" alt="bloco-tijolo-vedacao"
+                                title="bloco-tijolo-vedacao">
+                            <p>Tijolo de vedacão 14cm</p>
+                            <p>R$ 2,50</p>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="bloco-tijolo-vedacao-14-cm.html">
-                        <img src="img/bloco-tijolo-vedacao-14-cm - G.webp" width="180px" alt="bloco-tijolo-vedacao"
-                            title="bloco-tijolo-vedacao">
-                        <p>Tijolo de vedacão 14cm</p>
-                        <p>R$ 2,50</p>
-                    </a>
-                </article>
+                    <article>
+                        <a href="cimento Zebu 50kg.html">
+                            <img src="img/cimento Zebu 50kg - G.webp" width="180px" alt="Cimento Zebu 50kg"
+                                title="Cimento Zebu 50kg">
+                            <p>Cimento Zebu 50kg</p>
+                            <p>R$ 59,90</p>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="cimento Zebu 50kg.html">
-                        <img src="img/cimento Zebu 50kg - G.webp" width="180px" alt="Cimento Zebu 50kg"
-                            title="Cimento Zebu 50kg">
-                        <p>Cimento Zebu 50kg</p>
-                        <p>R$ 59,90</p>
-                    </a>
-                </article>
+                    <article>
+                        <a href="Argamassa-cimentcola-Quartzuliti.html">
+                            <img src="img/Argamassa cimentcola - G.webp" width="180px" alt="Argamassa cimentcola"
+                                title="Argamassa cimentcola">
+                            <p>Argamassa cimentcola Quartzuliti</p>
+                            <p>R$ 26,50</p>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="Argamassa-cimentcola-Quartzuliti.html">
-                        <img src="img/Argamassa cimentcola - G.webp" width="180px" alt="Argamassa cimentcola"
-                            title="Argamassa cimentcola">
-                        <p>Argamassa cimentcola Quartzuliti</p>
-                        <p>R$ 26,50</p>
-                    </a>
-                </article>
+                </div>
 
             </section>
-            <h2>Pisos</h2>
-            <hr>
+
             <section id="pisos">
+                
+                <h2>Pisos</h2>
+                
+                <div class="produtos-container">
 
+                    <article>
+                        <a href="piso-ceramaico-madeira.html">
+                            <img src="img/piso ceramaico madeira - G.webp" width="180px" alt="piso ceramico madeira"
+                                title="piso ceramico madeira">
+                            <p>Piso cerâmico madeira</p>
+                            <p>R$ 9,99</p>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="piso-ceramaico-madeira.html">
-                        <img src="img/piso ceramaico madeira - G.webp" width="180px" alt="piso ceramico madeira"
-                            title="piso ceramico madeira">
-                        <p>Piso cerâmico madeira</p>
-                        <p>R$ 9,99</p>
-                    </a>
-                </article>
+                    <article>
+                        <a href="piso-Argus.html">
+                            <img src="img/piso-Argus - G.webp" width="180px" alt="piso-Argus" title="piso-Argus">
+                            <p>Piso Argus</p>
+                            <p>R$ 14,99</p>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="piso-Argus.html">
-                        <img src="img/piso-Argus - G.webp" width="180px" alt="piso-Argus" title="piso-Argus">
-                        <p>Piso Argus</p>
-                        <p>R$ 14,99</p>
-                    </a>
-                </article>
+                    <article>
+                        <a href="Piso-Duomo-Marrom.html">
+                            <img src="img/Piso-Duomo-Marrom - G.webp" width="180px" alt="Piso-Duomo-Marrom"
+                                title="Piso-Duomo-Marrom">
+                            <p>Piso Duomo Marrom</p>
+                            <p>R$ 12,99</p>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="Piso-Duomo-Marrom.html">
-                        <img src="img/Piso-Duomo-Marrom - G.webp" width="180px" alt="Piso-Duomo-Marrom"
-                            title="Piso-Duomo-Marrom">
-                        <p>Piso Duomo Marrom</p>
-                        <p>R$ 12,99</p>
-                    </a>
-                </article>
+                </div>
 
             </section>
-            <h2>Tintas</h2>
-            <hr>
+
             <section id="tintas">
+                
+                <h2>Tintas</h2>
+               
+                <div class="produtos-container">
+                    <article>
+                        <a href="tinta-acrilica-gesso-branco-coral.html">
+                            <img src="img/TINTA-ACRILICA-RENOVA-DIRETO-GESSO-BRANCO-3.6L-CORAL - G.webp" width="180px"
+                                width="180px" alt="TINTA-ACRILICA" title="TINTA-ACRILICA">
+                            <p>Tinta acrílica gesso branco</p>
+                            <p>R$ 37,90</p>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="tinta-acrilica-gesso-branco-coral.html">
-                        <img src="img/TINTA-ACRILICA-RENOVA-DIRETO-GESSO-BRANCO-3.6L-CORAL - G.webp" width="180px"
-                            width="180px" alt="TINTA-ACRILICA" title="TINTA-ACRILICA">
-                        <p>Tinta acrílica gesso branco</p>
-                        <p>R$ 37,90</p>
-                    </a>
-                </article>
+                    <article>
+                        <a href="tinta-suvinil-sempre-nova.html">
+                            <img src="img/tinta-suvinil-sempre-nova - G.webp" width="180px" width="180px"
+                                alt="tinta-suvinil-sempre-nova" title="tinta-suvinil-sempre-nova">
+                            <p>Tinta suvinil sempre nova</p>
+                            <p>R$ 65,80</p>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="tinta-suvinil-sempre-nova.html">
-                        <img src="img/tinta-suvinil-sempre-nova - G.webp" width="180px" width="180px"
-                            alt="tinta-suvinil-sempre-nova" title="tinta-suvinil-sempre-nova">
-                        <p>Tinta suvinil sempre nova</p>
-                        <p>R$ 65,80</p>
-                    </a>
-                </article>
+                    <article>
+                        <a href="tinta_spray_de_uso_geral_350_ml.html">
+                            <img src="img/474808_tinta_spray_de_uso_geral_350_ml - G.webp" width="180px" width="180px"
+                                alt="tinta_spray_de_uso_geral_350_ml" title="tinta_spray_de_uso_geral">
+                            <p>tinta tekbond spray de uso geral </p>
+                            <p>R$ 18,70</p>
+                        </a>
+                    </article>
 
-                <article>
-                    <a href="tinta_spray_de_uso_geral_350_ml.html">
-                        <img src="img/474808_tinta_spray_de_uso_geral_350_ml - G.webp" width="180px" width="180px"
-                            alt="tinta_spray_de_uso_geral_350_ml" title="tinta_spray_de_uso_geral">
-                        <p>tinta tekbond spray de uso geral </p>
-                        <p>R$ 18,70</p>
-                    </a>
-                </article>
+                </div>
 
             </section>
 
