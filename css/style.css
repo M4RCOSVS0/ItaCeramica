@@ -1,7 +1,7 @@
 :root {
-    --cor-principal: darkred;
+    --cor-principal: #11113d;
     --cor-secundaria: white;
-    --cor-hover: firebrick;
+    --cor-hover: #3b3bf43e;
     --espacamento-padrao: 15px;
 }
 
@@ -81,7 +81,10 @@ li {
 
 .logo {
     float: left;
-    color: white;
+    margin: 0;
+    padding: 2px;
+    border: 0;
+    vertical-align: baseline;
 }
 
 .layout {
@@ -90,6 +93,57 @@ li {
     grid:
         "header" auto "main" 1fr "footer" auto / 1fr;
     gap: 8px;
+}
+/**/
+@media screen and (max-width: 1220px) {
+    nav{
+        width: 100%;
+    }
+    .logo{
+        margin-left: 7px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .header-bg {
+        background: red;
+    }
+
+    .logo {
+        float: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .menu {
+        margin-top: 20px;
+        float: none;
+        text-align: center;
+    }
+
+    li {
+        float: none;
+        margin-bottom: 5px;
+        padding: 10px;
+        display: block;
+    }
+
+    .dropdown-content a {
+        text-align: center;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--cor-secundaria);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
 }
 
 header {
