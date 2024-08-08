@@ -142,29 +142,27 @@ li {
 }
 
 /*grid-layout*/
-.layout {
-    display: grid;
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    grid-template-rows: auto 1fr auto; /* Define o tamanho das linhas */
-    grid-template-columns: 1fr; /* Define o tamanho da coluna */
-    gap: 8px;
-}
 
-header {
-    grid-area: header;
-}
+    .layout {
+        width: 100%; /* Ensure the layout takes full width */
+        height: 100vh; /* Take full viewport height */
+        display: grid;
+        grid-template-rows: auto 1fr auto; /* Adjusted to explicitly define rows */
+     /* Increased gap for better spacing */
+    }
+    
+    main, footer {
+        padding-left: 15px;
+    }
 
-main {
-    grid-area: main;
-}
+    footer{
+        text-align: center;
+        background-color: #11113d;
+    }
 
-footer {
-    grid-area: footer;
-}
-
+    #footer{
+        color: white
+    }
 /*css-FlexBox*/
 .produtos-container {
     display: flex;
@@ -183,11 +181,61 @@ footer {
     height: 315px;
     margin: 11px;
     background-color: white;
-    padding-left: 5px;
 }
 
 /*estilização do index*/
 h2 {
     margin: 5px;
     padding: 5px;
+}
+
+#banner{
+    margin: 0;
+    padding-left: 15%;
+    background-color: #11113d48;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+   
+    
+    
+}
+
+.conteudo-banner{
+    display: flex;
+    padding-left: 15%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#banner {
+    margin: 0;
+    padding-left: 15%;
+    background-color: #11113d48;
+    width: 100%;
+    height: 233px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(83, 86, 90, 0.747), rgba(83, 86, 90, 0.781)), url(../img/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-sizing: border-box;
+}
+
+#conteudo-banner {
+    display: flex;
+    padding-left: 15%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#conteudo{
+    width: 600px;
+}
+
+#titulo,#legenda{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif
 }
