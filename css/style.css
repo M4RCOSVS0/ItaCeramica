@@ -10,6 +10,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: GhostWhite;
 }
 
 li a:hover,
@@ -139,6 +140,9 @@ li {
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
+
+    
+    
 }
 
 /*grid-layout*/
@@ -151,13 +155,11 @@ li {
      /* Increased gap for better spacing */
     }
     
-    main, footer {
-        padding-left: 15px;
-    }
 
     footer{
         text-align: center;
         background-color: #11113d;
+        margin-top: 20px;
     }
 
     #footer{
@@ -167,22 +169,74 @@ li {
 .produtos-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center ;
     align-items: flex-start;
     align-content: flex-start;
     width: auto;
-    background-color: white;
+    background-color: GhostWhite;
     overflow: auto;
     flex-direction: row;
+    text-align: center;
 }
 
 .produtos article {
-    width: 215px;
-    height: 315px;
-    margin: 11px;
-    background-color: white;
+    width: 300px;
+    height: 350px;
+    margin: 2px;
+    background-color: #ffffff;
+    padding-top: 5px;
+    border: 1px solid rgb(229, 229, 230);
+    border-radius: 8px;
 }
 
+@media screen and (max-width: 1550px) {
+    .produtos article {
+        width: 250px;
+        height: 300px;
+    }
+
+    main img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .produtos article {
+        width: 200px;
+        height: 250px;
+    }
+
+    main img{
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 1050px) { 
+    .produtos article {
+        width: 150px;
+        height: 220px; 
+    }
+
+    main img{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 800px) { 
+    .produtos-container {
+        justify-content: flex-start ;
+        margin-left: 5%;
+    }
+
+    .produtos article {
+        width: 150px;
+        height: 220px; 
+    }
+
+    main img{
+        width: 120px;
+    }
+}
 /*estilização do index*/
 h2 {
     margin: 5px;
@@ -197,9 +251,6 @@ h2 {
     height: 300px;
     display: flex;
     align-items: center;
-   
-    
-    
 }
 
 .conteudo-banner{
@@ -232,10 +283,14 @@ h2 {
 }
 
 #conteudo{
-    width: 600px;
+    width: 70%;
 }
 
 #titulo,#legenda{
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif
+}
+
+main{
+    
 }
