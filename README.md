@@ -1,4 +1,4 @@
 # ItaCeramica
 
-Versão 1.0 da ItaCerâmica usando apenas HTML 5 
+Versão 2.0 da ItaCerâmica usando apenas HTML 5 & CSS
  
