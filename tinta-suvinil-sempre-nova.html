@@ -6,42 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ItaCerâmica | Tudo para sua construção</title>
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="color"] {
+            width: 50px;
+            height: 50px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        input[type="color"]:hover {
+            transform: scale(1.1);
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>ItaCerâmica</h1>
-        <hr>
         <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="index.html#produtos">Produtos</a></li>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo-site.png" alt="" width="90px">
+                </a>
+            </div>
+
+            <ul class="menu">
+                <li><a href="#ferramentas">Ferramentas</a></li>
+                <li><a href="#materiais">Materiais</a></li>
+                <li><a href="#pisos">Pisos</a></li>
+                <li><a href="#tintas">Tintas</a></li>
                 <li><a href="formulario.html">Fale conosco</a></li>
                 <li><a href="#footer">Sobre</a></li>
             </ul>
+
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Tinta suvinil sempre nova</h2>
-            <hr>
-            <article>
-                <img src="img/tinta-suvinil-sempre-nova - G.webp" alt="Tinta suvinil sempre nova" title="Tinta suvinil sempre nova">
-                <h3>Tinta suvinil sempre nova acrílico para fachadas.</h3>
-                <p>R$ 65,80</p>
-                <!--Ainda não funciona, apenas visual, espere a última versão!!!-->
-                <form action="tinta-suvinil-sempre-nova.html" method="get">
-                    <label for="cor">Escolha a cor: </label>
-                    <input type="color" name="cor" id="inColor" value="#000000">
-                    <input type="submit" value="Confirmar">
-                </form>
-                
-                <br>
-                <input type="number" name="quantidade" quantidade" min="1" max="500000" placeholder="Quantidade" aria-label="Adicionar Quantidade" id="inQuantidade">
-                
-                <button aria-label="Adicionar ao carrinho" id="btCarrinho">Adicionar ao carrinho</button>
-            </article>
+        <section class="carrossel-produtos">
+            <div class="produtos-container">
+                <h2>Tinta suvinil sempre nova</h2>
+                <hr>
+                <article>
+                    <img class="img-prod" src="img/tinta-suvinil-sempre-nova - G.webp" alt="Tinta suvinil sempre nova"
+                        title="Tinta suvinil sempre nova">
+                    <h3>Tinta suvinil sempre nova acrílico para fachadas.</h3>
+                    <p>R$ 65,80</p>
+                    <!--Ainda não funciona, apenas visual, espere a última versão!!!-->
+                    <form action="tinta-suvinil-sempre-nova.html" method="get">
+                        <label for="cor">Escolha a cor: </label>
+                        <input type="color" name="cor" id="inColor" value="#000000">
+                        <input type="submit" value="Confirmar">
+                    </form>
+
+                    <br>
+                    <input type="number" name="quantidade" min="1" max="500000" placeholder="Quantidade"
+                        aria-label="Adicionar Quantidade" class="inQuantidade">
+                    <button aria-label="Adicionar ao carrinho" class="btCarrinho">Adicionar ao carrinho</button>
+                </article>
+            </div>
         </section>
     </main>
 

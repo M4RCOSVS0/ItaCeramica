@@ -1,10 +1,3 @@
-/*Barra de navegação*/
-/*
-* {
-    margin: 0;
-    padding: 0;
-}
-*/
 :root {
     --cor-principal: #11113d;
     --cor-secundaria: white;
@@ -24,6 +17,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/*Barra de navegação*/
 li a:hover,
 .dropdown:hover .dropbtn {
     background-color: var(--cor-hover);
@@ -101,13 +95,9 @@ li {
     vertical-align: baseline;
 }
 
-/* Media queries
-Desktop 1024>>
-Tablet 768 ~ 1023
-Smartphone <<767
-*/
 
-/*midia quieres*/
+/*midia quieres para Barra de navegação*/
+
 @media screen and (max-width: 1220px) {
     nav {
         width: 100%;
@@ -158,31 +148,25 @@ Smartphone <<767
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
-
 }
 
 /*grid-layout*/
-
-.layout {
+body {
     width: 100%;
-    /* Ensure the layout takes full width */
     height: 100vh;
-    /* Take full viewport height */
     display: grid;
     grid-template-rows: auto 1fr auto;
-    /* Adjusted to explicitly define rows */
-    /* Increased gap for better spacing */
 }
 
 
 footer {
     text-align: center;
-    background-color: #11113d;
+    background-color: var(--cor-principal);
     margin-top: 20px;
     color: white
 }
 
-footer a{
+footer a {
     font-weight: bolder;
     color: #DDAD37;
 }
@@ -190,7 +174,8 @@ footer a{
 /*css-FlexBox*/
 .produtos-lista {
     display: flex;
-    flex-wrap: wrap; /*Quando implementar o carrossel, tirar o flex wrap */
+    flex-wrap: wrap;
+    /*Quando implementar o carrossel, tirar o flex wrap */
     justify-content: start;
     width: auto;
     background-color: GhostWhite;
@@ -225,6 +210,7 @@ footer a{
     border: 1px solid rgb(229, 229, 230);
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -232,6 +218,7 @@ main .foto-prod {
     width: 250px;
 }
 
+/*midia quieres para o flexbox*/
 @media screen and (max-width: 1600px) {
     .produtos .produto-card {
         width: 250px;
@@ -280,33 +267,25 @@ main .foto-prod {
         width: 120px;
     }
 }
+
 h2 {
     margin: 5px;
     padding: 5px;
 }
+
 /*estilização do index*/
 
-.nome-iten{
+.nome-iten {
     font-size: 16px;
     color: var(--cor-principal);
 }
 
-.preco{
+.preco {
     font-size: 16px;
     color: rgb(46, 46, 222);
     font-weight: 900;
 }
 
-
-#banner {
-    margin: 0;
-    padding-left: 15%;
-    background-color: #11113d48;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-}
 
 .conteudo-banner {
     display: flex;
@@ -347,29 +326,104 @@ h2 {
     font-family: Arial, Helvetica, sans-serif
 }
 
-.produto-card:hover{
+.produto-card:hover {
     transform: scale(1.04);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 
-/*paginas de produtos*/
-.produtos-pagina{
+/*estilização da paginas de produtos*/
+.produtos-pagina {
     text-align: left;
 }
 
-.info-produto{
+.info-produto {
     text-align: center;
 }
 
-.img-prod{
+.img-prod {
     border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* botão quantidade*/
+
+/* Estilo geral do formulário */
+
+.form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+    text-align: center;
+}
+
+
+label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+    background-color: #004085;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/*Estilo botão quantidade*/
 .inQuantidade {
     width: 100%;
     max-width: 100px;
@@ -385,8 +439,6 @@ a{
     outline: none;
     border-color: #007bff;
 }
-
-
 
 .btCarrinho {
     padding: 10px 20px;
@@ -408,85 +460,3 @@ a{
 .btCarrinho:active {
     background-color: #004085;
 }
-
-/*formulario*/
-
-/* Estilo geral do formulário */
-.form {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.form h1{
-    text-align: center;
-}
-
-
-/* Estilo dos rótulos (labels) */
-label {
-    font-size: 16px;
-    color: #555;
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* Estilo dos campos de entrada */
-input[type="text"], 
-input[type="email"], 
-textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
-    margin-bottom: 15px;
-    transition: border-color 0.3s ease;
-}
-
-/* Efeito ao focar nos campos de entrada */
-input[type="text"]:focus, 
-input[type="email"]:focus, 
-textarea:focus {
-    border-color: #007bff;
-    outline: none;
-}
-
-/* Estilo dos botões de enviar e refazer */
-input[type="submit"], 
-input[type="reset"] {
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-right: 10px;
-}
-
-/* Efeito ao passar o mouse sobre os botões */
-input[type="submit"]:hover, 
-input[type="reset"]:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-/* Efeito ao pressionar os botões */
-input[type="submit"]:active, 
-input[type="reset"]:active {
-    background-color: #004085;
-}
-
-/* Estilo do textarea */
-textarea {
-    resize: vertical;
-}
-

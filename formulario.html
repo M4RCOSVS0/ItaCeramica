@@ -10,40 +10,48 @@
 </head>
 
 <body>
-    <div class="layout">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="index.html#produtos">Produtos</a></li>
-                    <li><a href="#footer">Sobre</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="form">
-                <h1>Formulário de Contato</h1>
-                <form action="mailto:marcossvin.so@gmail.com" method="post" enctype="text/plain">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Informe seu nome:">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Informe seu melhor e-mail:">
-                    <label for="descricao">Descrição:</label>
-                    <textarea id="descricao" name="descricao" rows="6" cols="50"
-                        placeholder="faça uma breve descrição:"></textarea><br><br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Refazer">
-                </form>
-            </section>
-        </main>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo-site.png" alt="" width="90px">
+                </a>
+            </div>
 
-        <footer id="footer">
-            <p>
-                Feito por Marcos Vinícius Santana, visite meu
-                <a href="https://github.com/M4RCOSVS0" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </p>
-        </footer>
-    </div>
+            <ul class="menu">
+                <li><a href="#ferramentas">Ferramentas</a></li>
+                <li><a href="#materiais">Materiais</a></li>
+                <li><a href="#pisos">Pisos</a></li>
+                <li><a href="#tintas">Tintas</a></li>
+                <li><a href="#footer">Sobre</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="form">
+            <h1>Formulário de Contato</h1>
+            <form action="mailto:marcossvin.so@gmail.com" method="post" enctype="text/plain">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Informe seu nome:">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Informe seu melhor e-mail:">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" rows="6" cols="50"
+                    placeholder="faça uma breve descrição:"></textarea><br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Refazer">
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>
+            Feito por Marcos Vinícius Santana, visite meu
+            <a href="https://github.com/M4RCOSVS0" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+    </footer>
+
 </body>
 
 </html>
