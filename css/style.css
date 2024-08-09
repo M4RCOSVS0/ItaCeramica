@@ -1,16 +1,26 @@
 /*Barra de navegação*/
-
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
 :root {
     --cor-principal: #11113d;
     --cor-secundaria: white;
     --cor-hover: #3b3bf43e;
     --espacamento-padrao: 15px;
+    /* Pesquisar sobre os tamanhos Rem e Em */
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: GhostWhite;
     margin: 0;
     padding: 0;
-    background-color: GhostWhite;
 }
 
 li a:hover,
@@ -90,15 +100,22 @@ li {
     vertical-align: baseline;
 }
 
+/* Media queries
+Desktop 1024>>
+Tablet 768 ~ 1023
+Smartphone <<767
+*/
+
 /*midia quieres*/
 @media screen and (max-width: 1220px) {
-    nav{
+    nav {
         width: 100%;
     }
-    .logo{
+
+    .logo {
         margin-left: 7px;
     }
-    
+
 }
 
 @media screen and (max-width: 600px) {
@@ -112,7 +129,7 @@ li {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .menu {
@@ -141,37 +158,51 @@ li {
         z-index: 1;
     }
 
-    
-    
 }
 
 /*grid-layout*/
 
-    .layout {
-        width: 100%; /* Ensure the layout takes full width */
-        height: 100vh; /* Take full viewport height */
-        display: grid;
-        grid-template-rows: auto 1fr auto; /* Adjusted to explicitly define rows */
-     /* Increased gap for better spacing */
-    }
-    
+.layout {
+    width: 100%;
+    /* Ensure the layout takes full width */
+    height: 100vh;
+    /* Take full viewport height */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* Adjusted to explicitly define rows */
+    /* Increased gap for better spacing */
+}
 
-    footer{
-        text-align: center;
-        background-color: #11113d;
-        margin-top: 20px;
-    }
 
-    #footer{
-        color: white
-    }
+footer {
+    text-align: center;
+    background-color: #11113d;
+    margin-top: 20px;
+    color: white
+}
+
 /*css-FlexBox*/
+.produtos-lista {
+    display: flex;
+    flex-wrap: wrap; /*Quando implementar o carrossel, tirar o flex wrap */
+    justify-content: start;
+    width: auto;
+    background-color: GhostWhite;
+    overflow: auto;
+    flex-direction: row;
+    text-align: center;
+}
+
 .produtos-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center ;
+    flex-direction: column;
+    justify-content: start;
     align-items: flex-start;
-    align-content: flex-start;
+}
+
+.carrossel-produtos {
+    display: flex;
+    justify-content: center;
     width: auto;
     background-color: GhostWhite;
     overflow: auto;
@@ -189,13 +220,17 @@ li {
     border-radius: 8px;
 }
 
+main img {
+    width: 250px;
+}
+
 @media screen and (max-width: 1550px) {
     .produtos article {
         width: 250px;
         height: 300px;
     }
 
-    main img{
+    main img {
         width: 200px;
     }
 }
@@ -203,47 +238,48 @@ li {
 @media screen and (max-width: 1300px) {
     .produtos article {
         width: 200px;
-        height: 250px;
+        height: 270px;
     }
 
-    main img{
+    main img {
         width: 180px;
     }
 }
 
-@media screen and (max-width: 1050px) { 
+@media screen and (max-width: 1050px) {
     .produtos article {
         width: 150px;
-        height: 220px; 
+        height: 220px;
     }
 
-    main img{
+    main img {
         width: 120px;
     }
 }
 
-@media screen and (max-width: 800px) { 
-    .produtos-container {
-        justify-content: flex-start ;
+@media screen and (max-width: 800px) {
+    .produtos-lista {
+        justify-content: flex-start;
         margin-left: 5%;
     }
 
     .produtos article {
         width: 150px;
-        height: 220px; 
+        height: 220px;
     }
 
-    main img{
+    main img {
         width: 120px;
     }
 }
+
 /*estilização do index*/
 h2 {
     margin: 5px;
     padding: 5px;
 }
 
-#banner{
+#banner {
     margin: 0;
     padding-left: 15%;
     background-color: #11113d48;
@@ -253,7 +289,7 @@ h2 {
     align-items: center;
 }
 
-.conteudo-banner{
+.conteudo-banner {
     display: flex;
     padding-left: 15%;
     flex-direction: column;
@@ -282,15 +318,14 @@ h2 {
     gap: 20px;
 }
 
-#conteudo{
+#conteudo {
     width: 70%;
 }
 
-#titulo,#legenda{
+#titulo,
+#legenda {
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif
 }
 
-main{
-    
-}
+main {}
