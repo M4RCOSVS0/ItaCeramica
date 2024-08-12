@@ -1,8 +1,8 @@
 :root {
     --cor-principal: #11113d;
-    --cor-secundaria: white;
+    --cor-secundaria: #ffffff;
     --cor-hover: #3b3bf43e;
-    --espacamento-padrao: 15px;
+    --cor-de-fundo: #f8f8ff;
     /* Pesquisar sobre os tamanhos Rem e Em */
 }
 
@@ -11,10 +11,19 @@ html {
 }
 
 body {
-    background-color: GhostWhite;
+    background-color: var(--cor-de-fundo);
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Times, 'Times New Roman', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    margin: 5px;
+    padding: 5px;
 }
 
 /*Barra de navegação*/
@@ -27,9 +36,9 @@ li a,
 .dropbtn,
 .logo {
     display: inline-block;
-    color: white;
+    color: var(--cor-secundaria);
     text-align: center;
-    padding: var(--espacamento-padrao);
+    padding: 15px 15px 15px 5px;
     text-decoration: none;
 }
 
@@ -84,7 +93,7 @@ nav {
 
 li {
     display: inline-block;
-    color: white;
+    color: var(--cor-secundaria);
 }
 
 .logo {
@@ -98,7 +107,7 @@ li {
 
 /*midia quieres para Barra de navegação*/
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1280px) {
     nav {
         width: 100%;
     }
@@ -109,11 +118,7 @@ li {
 
 }
 
-@media screen and (max-width: 600px) {
-    .header-bg {
-        background: red;
-    }
-
+@media screen and (max-width: 500px) {
     .logo {
         float: none;
         text-align: center;
@@ -163,7 +168,7 @@ footer {
     text-align: center;
     background-color: var(--cor-principal);
     margin-top: 20px;
-    color: white
+    color: var(--cor-secundaria);
 }
 
 footer a {
@@ -178,7 +183,7 @@ footer a {
     /*Quando implementar o carrossel, tirar o flex wrap */
     justify-content: start;
     width: auto;
-    background-color: GhostWhite;
+    background-color: var(--cor-de-fundo);
     overflow: auto;
     flex-direction: row;
     text-align: center;
@@ -195,7 +200,7 @@ footer a {
     display: flex;
     justify-content: center;
     width: auto;
-    background-color: GhostWhite;
+    background-color: var(--cor-de-fundo);
     overflow: auto;
     flex-direction: row;
     text-align: center;
@@ -268,11 +273,6 @@ main .foto-prod {
     }
 }
 
-h2 {
-    margin: 5px;
-    padding: 5px;
-}
-
 /*estilização do index*/
 
 .nome-iten {
@@ -330,11 +330,6 @@ h2 {
     transform: scale(1.04);
 }
 
-a {
-    text-decoration: none;
-}
-
-
 /*estilização da paginas de produtos*/
 .produtos-pagina {
     text-align: left;
@@ -346,10 +341,46 @@ a {
 
 .img-prod {
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
 }
 
+/*Estilo botão quantidade*/
+.inQuantidade {
+    width: 100%;
+    max-width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+}
 
+.inQuantidade:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.btCarrinho {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btCarrinho:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btCarrinho:active {
+    background-color: #004085;
+}
 /* Estilo geral do formulário */
 
 .form {
@@ -367,7 +398,7 @@ a {
 
 
 label {
-    font-size: 16px;
+    font-size: 20px;
     color: #555;
     display: block;
     margin-bottom: 5px;
@@ -423,40 +454,3 @@ textarea {
     resize: vertical;
 }
 
-/*Estilo botão quantidade*/
-.inQuantidade {
-    width: 100%;
-    max-width: 100px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
-    transition: border-color 0.3s ease;
-}
-
-.inQuantidade:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-.btCarrinho {
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btCarrinho:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-.btCarrinho:active {
-    background-color: #004085;
-}
