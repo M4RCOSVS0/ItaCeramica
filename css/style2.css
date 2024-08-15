@@ -1,0 +1,73 @@
+:root {
+    --cor-de-fundo: #f8f8ff;
+    /* Pesquisar sobre os tamanhos Rem e Em */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+
+a{
+    text-decoration: none;
+}
+
+.carousel-caption {
+  text-align: left;
+  right: 50%;
+}
+
+.carousel-inner>.carousel-item>img {
+  height: 233px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Ocultar setas na versão mobile */
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 400px) {
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.875rem;
+  }
+}

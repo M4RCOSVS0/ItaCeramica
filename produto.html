@@ -32,40 +32,33 @@
 
         </nav>
     </header>
+
     <main>
-        <!--aprimorado via bootstrap-->
-        <section class="form container my-5">
-            <h1 class="text-center mb-4">Formulário de Contato</h1>
-            <form action="mailto:marcossvin.so@gmail.com" method="post" enctype="text/plain">
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Nome:</label>
-                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Informe seu nome:">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="Informe seu melhor e-mail:">
-                </div>
-                <div class="mb-3">
-                    <label for="descricao" class="form-label">Descrição:</label>
-                    <textarea id="descricao" name="descricao" class="form-control" rows="6" placeholder="Faça uma breve descrição:"></textarea>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <input type="submit" class="btn btn-primary" value="Enviar">
-                    <input type="reset" class="btn btn-secondary" value="Refazer">
-                </div>
-            </form>
+        <section class="carrossel-produtos">
+            <div class="produtos-container">
+                <h1 id="nome-produto"></h1>
+
+                <article class="info-produto">
+                    <img id="imagem-produto" class="img-prod" src="" alt="Imagem do produto">
+                    
+                    <h3 id="descricao-produto"></h3>
+                    <span id="imagem-produto"></span>
+                    <input type="number" name="quantidade" min="1" max="500000" placeholder="Quantidade"
+                        aria-label="Adicionar Quantidade" class="inQuantidade">
+                    <button aria-label="Adicionar ao carrinho" class="btCarrinho">Adicionar ao carrinho</button>
+                </article>
+            </div>
         </section>
-        
     </main>
-    <!--aprimorado via bootstrap-->
+
     <footer id="footer" class="bg-dark text-white text-center py-3 mt-5">
         <p>
             Feito por Marcos Vinícius Santana, visite meu
             <a href="https://github.com/M4RCOSVS0" target="_blank" rel="noopener noreferrer" class="text-light fw-bold">GitHub</a>
         </p>
     </footer>
-    
 
+    <script src="js/script"></script>
 </body>
 
 </html>
