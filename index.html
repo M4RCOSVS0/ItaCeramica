@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ItaCerâmica | Tudo para sua construção</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/logoico.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 
 <body>
@@ -19,15 +25,15 @@
             </div>
 
             <ul class="menu">
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Produtos</a>
-                        <div class="dropdown-content">
-                            <a href="#ferramentas">Ferramentas</a>
-                            <a href="#materiais">Materiais</a>
-                            <a href="#pisos">pisos</a>
-                            <a href="#tintas">Tintas</a>
-                        </div>
-                    </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Produtos</a>
+                    <div class="dropdown-content">
+                        <a href="#ferramentas">Ferramentas</a>
+                        <a href="#materiais">Materiais</a>
+                        <a href="#pisos">pisos</a>
+                        <a href="#tintas">Tintas</a>
+                    </div>
+                </li>
                 <li><a href="formulario.html">Fale conosco</a></li>
                 <li><a href="#footer">Sobre</a></li>
             </ul>
@@ -35,16 +41,43 @@
         </nav>
     </header>
 
-    <section id="banner">
-        <div id="conteudo">
-            <h1 id="titulo">ItaCerâmica</h1>
-            <hr>
-            <div id="tabulacao">
-                <p id="legenda">Transforme seu lar com qualidade e estilo. Na ItaCeramica, você encontra os melhores
-                    materiais para construção e reforma, com a confiança e tradição que você merece.</p>
-            </div>
+    <div id="banner" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
         </div>
-    </section>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/banner.webp" class="d-block w-100 img-fluid" class="gradiente" alt="...">
+            <div class="carousel-caption">
+              <h1 id="titulo">ItaCerâmica</h1>
+              <hr>
+              <div>
+                <p>Transforme seu lar com qualidade e estilo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../img/banner2.webp" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption">
+              <h1>Iluminação</h1>
+              <hr>
+              <p>Gostaríamos de avisar que em breve também contaremos com setor de iluminação</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Indicadores Laterais -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
     <main class="produtos" id="produtos">
         <section class="carrossel-produtos" id="ferramentas">
@@ -81,7 +114,7 @@
                     </article>
 
                     <article class="produto-card">
-                        <a href="Martelo-normal.html">
+                        <a href="produto.html?id=Martelo-normal">
                             <img class="foto-prod" src="img/martelo - G.webp" alt="Martelo" title="Martelo">
                             <h3 class="nome-iten">Martelo</h3>
                             <span class="preco">R$ 89,90</span>
@@ -89,13 +122,13 @@
                     </article>
 
                     <article class="produto-card">
-                        <a href="Martelo-normal.html">
+                        <a href="produto.html?id=Martelo-normal">
                             <img class="foto-prod" src="img/martelo - G.webp" alt="Martelo" title="Martelo">
                             <h3 class="nome-iten">Martelo</h3>
                             <span class="preco">R$ 89,90</span>
                         </a>
                     </article>
-                    
+
                 </div>
             </div>
         </section>
@@ -134,7 +167,7 @@
                     </article>
 
                     <article class="produto-card">
-                        <a href="Argamassa-cimentcola-Quartzuliti.html">
+                        <a href="produto.html?id=Argamassa-cimentcola-Quartzuliti">
                             <img class="foto-prod" src="img/Argamassa cimentcola - G.webp" alt="Argamassa cimentcola"
                                 title="Argamassa Cimentcola">
                             <h3 class="nome-iten">Argamassa cimentcola</h3>
@@ -143,7 +176,7 @@
                     </article>
 
                     <article class="produto-card">
-                        <a href="Argamassa-cimentcola-Quartzuliti.html">
+                        <a href="produto.html?id=Argamassa-cimentcola-Quartzuliti">
                             <img class="foto-prod" src="img/Argamassa cimentcola - G.webp" alt="Argamassa cimentcola"
                                 title="Argamassa Cimentcola">
                             <h3 class="nome-iten">Argamassa cimentcola</h3>
@@ -188,7 +221,7 @@
                     </article>
 
                     <article class="produto-card">
-                        <a href="Piso-Duomo-Marrom.html">
+                        <a href="produto.html?id=Piso-Duomo-Marrom">
                             <img class="foto-prod" src="img/Piso-Duomo-Marrom - G.webp" alt="Piso-Duomo-Marrom"
                                 title="Piso-Duomo-Marrom">
                             <h3 class="nome-iten">Piso Duomo Marrom</h3>
@@ -197,14 +230,13 @@
                     </article>
 
                     <article class="produto-card">
-                        <a href="Piso-Duomo-Marrom.html">
+                        <a href="produto.html?id=Piso-Duomo-Marrom">
                             <img class="foto-prod" src="img/Piso-Duomo-Marrom - G.webp" alt="Piso-Duomo-Marrom"
                                 title="Piso-Duomo-Marrom">
                             <h3 class="nome-iten">Piso Duomo Marrom</h3>
                             <span class="preco">R$ 12,90</span>
                         </a>
                     </article>
-
                 </div>
             </div>
 
@@ -267,13 +299,13 @@
 
     </main>
     <!-- Quando criar ID's que não vão ter estilização, utilizar o prefixo de underline "_" -->
-    <footer id="_footer">
-        <h3>
-            <!-- span -->
-            Feito por Marcos Vinícius Santana , visite meu
-            <a href="https://github.com/M4RCOSVS0" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </h3>
+    <footer id="footer" class="bg-dark text-white text-center py-3 mt-5">
+        <p>
+            Feito por Marcos Vinícius Santana, visite meu
+            <a href="https://github.com/M4RCOSVS0" target="_blank" rel="noopener noreferrer" class="text-light fw-bold">GitHub</a>
+        </p>
     </footer>
 
 </body>
+
 </html>
