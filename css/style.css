@@ -260,7 +260,7 @@ main .foto-prod {
 @media screen and (max-width: 850px) {
     .produtos-lista {
         justify-content: flex-start;
-        margin-left: 5%;
+        margin-left: 7.5%;
     }
 
     .produtos .produto-card {
